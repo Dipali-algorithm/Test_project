@@ -156,7 +156,7 @@ class AddressController extends Controller
                 $weight = $item->product->product_weight; // in kg
                 $quantity = $item->quantity;
                 $itemWeight = $weight * $quantity;
-                $shippingCharge = ($itemWeight >= $courierDetails['min_weight']) ? $courierDetails['rate'] : 0;
+                $shippingCharge = ($itemWeight >= $courierDetails['min_weight']) ? $courierDetails['rate'] : 1;
                 $totalShippingCharge += $shippingCharge;
 
                 // Add item-specific shipping charges to array
