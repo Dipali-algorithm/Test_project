@@ -168,6 +168,7 @@ class AddressController extends Controller
         }
 
         // Calculate order total
+        // Calculate order total
         $orderTotal = $subtotal + $totalShippingCharge;
 
         return view('checkout', compact('address', 'cartItems', 'subtotal', 'orderTotal', 'totalShippingCharge', 'itemsWithShippingCharges', 'courierDetails'));
