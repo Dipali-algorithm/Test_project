@@ -172,4 +172,5 @@ class AddressController extends Controller
 
         return view('checkout', compact('address', 'cartItems', 'subtotal', 'orderTotal', 'totalShippingCharge', 'itemsWithShippingCharges', 'courierDetails'));
     }
+    //comment
 }
